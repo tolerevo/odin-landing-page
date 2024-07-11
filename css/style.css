@@ -52,6 +52,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	width: fit-content;
 }
 
 header {
@@ -65,6 +66,11 @@ header {
 	color: #f9faf8;
 	font-size: 24px;
 	background-color: #1f2937;
+}
+
+nav.header-nav {
+	padding-right: 60px;
+	margin-right: 60px;
 }
 
 ul.header-list {
@@ -82,13 +88,20 @@ li a {
 	color: #e5e7eb;
 }
 
+img {
+  min-width: 50%;
+}
+
 .hero {
 	background-color: #1f2937;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	align-items: center;
+	align-items: stretch;
 	justify-content: space-between;
+	width: 100vw;
+	padding: 20px 60px;
+	min-width: 50%;
 }
 
 div.hero-container {
@@ -96,19 +109,18 @@ div.hero-container {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-content: space-around;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: flex-start;
-	padding: 60px;
 	gap: 20px;
-	width: 50%;
+	max-width: 50%;
+	padding-right: 20px;
 }
 
 div.image-container {
-	width: 50%;
-	position: relative;
-	float: right;
+	padding-right: 60px;
+	margin-right: 60px;
 	align-content: center;
-	justify-content: right;
+	justify-content: center;
 }
 
 h1.title {
@@ -122,6 +134,69 @@ p.hero-text {
 	color: #e5e7eb;
 }
 
+div.image-section {
+	background-color: #f9faf8;
+}
+
+div.image-section h2 {
+	font-size: 36px;
+	font-weight: bolder;
+	color: #1f2937;
+	text-align: center;
+	padding-top: 20px;
+}
+
+div.image-section p {
+	color: #1f2937;
+	font-size: 18px;
+}
+
+section.card-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 50px;
+	align-content: center;
+	justify-content:space-around;
+	padding: 20px 60px;
+	text-align: justify;
+	width: 82%;
+}
+
+div.card img {
+	height: auto;
+	width: 100%;
+}
+
+div.card {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+}
+
+div.quote-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px;
+	justify-content: center;
+	background-color: #e5e7eb;
+	color: #1f2937;
+}
+
+div.quote-section p {
+	padding-right: 100px;
+	text-align: left;
+	font-style: italic;
+	font-size: 36px;
+	font-weight: lighter;
+}
+
+div.quote-section cite {
+	padding-left: 600px;
+}
+
 button {
 	background-color: #3882fe;
 	color: #f9faf8;
@@ -130,11 +205,11 @@ button {
 	padding: 10px 30px;
 	text-align: center;
 }
-img {
-	min-width: 300px;
-	height: auto;
-}
 
 footer {
+	padding: 20px 0;
 	margin-top: auto;
+	text-align: center;
+	background-color: #1f2937;
+	color: #f9faf8;
 }
