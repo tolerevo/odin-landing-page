@@ -48,6 +48,93 @@ table {
 }
 
 /* my styles */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	padding: 20px 60px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	color: #f9faf8;
+	font-size: 24px;
+	background-color: #1f2937;
+}
+
+ul.header-list {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	gap: 20px;
+	font-size: 18px;
+}
+
+li a {
+	text-decoration: none;
+	color: #e5e7eb;
+}
+
+.hero {
+	background-color: #1f2937;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+div.hero-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: space-around;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 60px;
+	gap: 20px;
+	width: 50%;
+}
+
+div.image-container {
+	width: 50%;
+	position: relative;
+	float: right;
+	align-content: center;
+	justify-content: right;
+}
+
+h1.title {
+	font-size: 48px;
+	font-weight: bolder;
+	color: #f9faf8
+}
+
+p.hero-text {
+	font-size: 18px;
+	color: #e5e7eb;
+}
+
+button {
+	background-color: #3882fe;
+	color: #f9faf8;
+	font-size: 18px;
+	border-radius: 9px;
+	padding: 10px 30px;
+	text-align: center;
+}
 img {
-	max-width: 100%;
+	min-width: 300px;
+	height: auto;
+}
+
+footer {
+	margin-top: auto;
 }
