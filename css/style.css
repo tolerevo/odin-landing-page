@@ -48,7 +48,9 @@ table {
 }
 
 /* my styles */
+
 body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -88,20 +90,17 @@ li a {
 	color: #e5e7eb;
 }
 
-img {
-  min-width: 50%;
-}
-
 .hero {
 	background-color: #1f2937;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: stretch;
-	justify-content: space-between;
-	width: 100vw;
-	padding: 20px 60px;
-	min-width: 50%;
+	justify-content: space-around;
+	width: fit-content;
+  padding: 40px 60px;
+  gap: 20px;
+	width:fit-content;
 }
 
 div.hero-container {
@@ -112,15 +111,15 @@ div.hero-container {
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 20px;
-	max-width: 50%;
+	min-width: 49%;
 	padding-right: 20px;
 }
 
 div.image-container {
 	padding-right: 60px;
 	margin-right: 60px;
-	align-content: center;
 	justify-content: center;
+	min-width: 49%;
 }
 
 h1.title {
@@ -136,6 +135,7 @@ p.hero-text {
 
 div.image-section {
 	background-color: #f9faf8;
+	padding: 20px 60px;
 }
 
 div.image-section h2 {
@@ -197,13 +197,56 @@ div.quote-section cite {
 	padding-left: 600px;
 }
 
-button {
+button.hero-btn {
 	background-color: #3882fe;
 	color: #f9faf8;
 	font-size: 18px;
 	border-radius: 9px;
 	padding: 10px 30px;
 	text-align: center;
+}
+
+div.signup-section {
+	padding: 60px 120px;
+	background-color: #f9faf8;
+}
+
+p.signup-text, 
+h3.signup-title {
+	color: hsl(90, 17%, 98%);
+}
+
+h3.signup-title {
+	font-size: 24px;
+}
+
+div.signup-container {
+	display: flex;
+	background-color: #3882fe;
+	padding: 30px 60px;
+	gap: 20px;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+section.signup-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-content: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+button.signup-btn {
+	background-color: #3882fe;
+	color: #f9faf8;
+	font-size: 18px;
+	border-radius: 9px;
+	padding: 10px 30px;
+	text-align: center;
+	border: 1px solid #f9faf8;
 }
 
 footer {
