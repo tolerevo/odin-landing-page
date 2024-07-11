@@ -3,19 +3,87 @@
   License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -70,9 +157,21 @@ header {
 	background-color: #1f2937;
 }
 
+cite {
+	padding-left: 600px;
+	font-style: bolder;
+	font-size: 24px;
+}
+
+
 nav.header-nav {
 	padding-right: 60px;
 	margin-right: 60px;
+}
+
+li a {
+	text-decoration: none;
+	color: #e5e7eb;
 }
 
 ul.header-list {
@@ -85,11 +184,6 @@ ul.header-list {
 	font-size: 18px;
 }
 
-li a {
-	text-decoration: none;
-	color: #e5e7eb;
-}
-
 .hero {
 	background-color: #1f2937;
 	display: flex;
@@ -98,9 +192,9 @@ li a {
 	align-items: stretch;
 	justify-content: space-around;
 	width: fit-content;
-  padding: 40px 60px;
-  gap: 20px;
-	width:fit-content;
+	padding: 40px 60px;
+	gap: 20px;
+	width: fit-content;
 }
 
 div.hero-container {
@@ -157,7 +251,7 @@ section.card-container {
 	flex-wrap: nowrap;
 	gap: 50px;
 	align-content: center;
-	justify-content:space-around;
+	justify-content: space-around;
 	padding: 20px 60px;
 	text-align: justify;
 	width: 82%;
@@ -165,7 +259,10 @@ section.card-container {
 
 div.card img {
 	height: auto;
-	width: 100%;
+	width: 150px;
+	border: 3px solid blue;
+	border-radius: 9px;
+	min-width: 100%;
 }
 
 div.card {
@@ -193,9 +290,6 @@ div.quote-section p {
 	font-weight: lighter;
 }
 
-div.quote-section cite {
-	padding-left: 600px;
-}
 
 button.hero-btn {
 	background-color: #3882fe;
@@ -211,7 +305,7 @@ div.signup-section {
 	background-color: #f9faf8;
 }
 
-p.signup-text, 
+p.signup-text,
 h3.signup-title {
 	color: hsl(90, 17%, 98%);
 }
@@ -227,6 +321,7 @@ div.signup-container {
 	gap: 20px;
 	align-items: stretch;
 	justify-content: space-between;
+	border-radius: 9px;
 }
 
 section.signup-container {
@@ -234,9 +329,9 @@ section.signup-container {
 	flex-direction: column;
 	gap: 10px;
 	align-content: stretch;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: nowrap;
 }
 
 button.signup-btn {
@@ -246,7 +341,7 @@ button.signup-btn {
 	border-radius: 9px;
 	padding: 10px 30px;
 	text-align: center;
-	border: 1px solid #f9faf8;
+	border: 2px solid #f9faf8;
 }
 
 footer {
