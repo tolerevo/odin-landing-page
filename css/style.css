@@ -164,11 +164,6 @@ cite {
   font-size: 24px;
 }
 
-/*nav.header-nav {
-  margin-right: 60px;
-  padding-right: 0;
-}*/
-
 li a {
   text-decoration: none;
   color: #e5e7eb;
@@ -226,8 +221,10 @@ div.image-container {
 img.hero-img {
   width: 100%;
   border: 4px solid navy;
-  border-radius: 15px;;
+  border-radius: 15px;
+  ;
 }
+
 h1.title {
   font-size: 48px;
   font-weight: bolder;
@@ -364,8 +361,4 @@ footer {
   text-align: center;
   background-color: #1f2937;
   color: #f9faf8;
-}
-
-div.quote-section {
-  
 }
